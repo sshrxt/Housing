@@ -19,13 +19,12 @@ class House{
         double crimeRate;
         string shortSummary;
     public:
-        House() : address("Unkown"), rent(0), maxOccupants(0), crimeRate(0), shortSummary("A house"){}
-        House(string address, int rent, int maxOccupants, double crimeRate, string shortSummary);
+        House(string address = "unkown", int rent = 0, int maxOccupants = 0, double crimeRate = 0, string shortSummary = "");
         void setRent(int rent) { this->rent = rent;}
         void setOccupants(int occupants) { this->maxOccupants = occupants;}
         void setCrimeRate(double crimeRate) { this->crimeRate = crimeRate;}
         void setSummary(string summary) { this->shortSummary = summary;}
-        void setAdress(string address) { this->address = address;}
+        void setAddress(string address) { this->address = address;}
         int getRent() const {return rent;}
         int getOccupants() const {return maxOccupants;}
         double getCrimeRate() const {return crimeRate;}

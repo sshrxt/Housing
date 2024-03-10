@@ -30,3 +30,20 @@ void HouseList::printAllHouses(){
         current = current->next;
     }
 }
+
+void HouseList::push_back(House* newHouse){
+    HouseNode* newNode = new HouseNode(newHouse);
+
+    if(head == nullptr){
+        head = newNode;
+    }
+    else{
+        HouseNode* current = head;
+
+        while(current->next != nullptr){
+            current = current->next;
+        }
+        
+        current->next = newNode;
+    }
+}

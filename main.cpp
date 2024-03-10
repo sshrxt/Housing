@@ -9,12 +9,12 @@ int main(){
     House* house2 = new House("Bay Colony");
     House* house3 = new House("Hollyberry");
     House* house4 = new House("Bianco Terrace");
-
+    
     HouseList myHouses;
-    myHouses.push_front(house1);
-    myHouses.push_front(house2);
-    myHouses.push_front(house3);
-    myHouses.push_front(house4);
+    myHouses.push_back(house1);
+    myHouses.push_back(house2);
+    myHouses.push_back(house3);
+    myHouses.push_back(house4);
 
 
     myHouses.printAllHouses();

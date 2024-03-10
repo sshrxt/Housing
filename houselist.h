@@ -22,4 +22,5 @@ class HouseList {
         HouseList() : size(0), head(nullptr){}
         void push_front(House* newHouse);
         void printAllHouses();
+        void push_back(House* newHouse);
 };

@@ -11,11 +11,17 @@ int main(){
     House* house4 = new House("Bianco Terrace");
     
     HouseList myHouses;
+    
+
+
+    Apartment* myApartment = new Apartment("Chicago");
+    
+    myHouses.push_back(myApartment);
     myHouses.push_back(house1);
     myHouses.push_back(house2);
-    myHouses.push_back(house3);
     myHouses.push_back(house4);
-
+    myHouses.push_back(house3);
 
     myHouses.printAllHouses();
+    
 }

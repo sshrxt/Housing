@@ -11,9 +11,8 @@ using namespace std;
 
 
 class House{
-    private:
-        string address;
     protected:
+        string address;
         int rent;
         int maxOccupants;
         double crimeRate;
@@ -29,5 +28,15 @@ class House{
         int getOccupants() const {return maxOccupants;}
         double getCrimeRate() const {return crimeRate;}
         string getSummary() const {return shortSummary;}
-        void printInfo();
+        virtual void printInfo();
+};
+
+
+class Apartment: public House{
+    private: 
+        int leaseTerm;
+        string commuteSummary;
+    public:
+        Apartment(string address = "unkown", int rent = 0, int maxOccupants = 0, double crimeRate = 0, string shortSummary="", int leaseTerm = 0, string commute = "needs inoput!");
+        void printInfo();  
 };

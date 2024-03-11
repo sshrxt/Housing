@@ -46,4 +46,5 @@ void HouseList::push_back(House* newHouse){
         
         current->next = newNode;
     }
+    size++;
 }

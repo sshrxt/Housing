@@ -8,12 +8,10 @@ using namespace std;
 void HouseList::push_front(House* newHouse){
     HouseNode* newNode = new HouseNode(newHouse);
 
-    if(head == nullptr)
-    {
+    if(head == nullptr) {
         head = newNode;
     }
-    else
-    {   
+    else {   
         newNode->next = head;
         head = newNode;
     }

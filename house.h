@@ -33,10 +33,21 @@ class House{
 
 
 class Apartment: public House{
-    private: 
+    protected: 
         int leaseTerm;
         string commuteSummary;
     public:
         Apartment(string address = "unkown", int rent = 0, int maxOccupants = 0, double crimeRate = 0, string shortSummary="", int leaseTerm = 0, string commute = "needs inoput!");
         void printInfo();  
 };
+
+class Studio: public House{
+    private:
+        bool hasPets;
+        string favAspect;
+        int leaseTerm;
+    public:
+        Studio(string address = "Unkown", int rent = 0, double crimeRate = 0, string shortSummary="Enter", int leaseTerm = 0, bool hasPets = false, string favAspect = "");
+        void printInfo();
+};
+
